@@ -8,6 +8,16 @@ import OpenFilePage from "./components/OpenFilePage";
 import GuidePage from "./components/guidePages/GuidePage";
 
 
+/**
+ * Root React component that renders the search UI and navigates between app pages.
+ *
+ * Manages search query state, first-launch behavior (shows the guide on first run),
+ * Escape-key navigation (hides the window or returns to home), and input focus.
+ * Renders different pages based on internal navigation state: home, clipboard,
+ * online-search, open-app, and open-guide.
+ *
+ * @returns {JSX.Element} The root UI element for the application.
+ */
 function App() {
   const [query, setQuery] = useState("");
   const inputRef = useRef(null);

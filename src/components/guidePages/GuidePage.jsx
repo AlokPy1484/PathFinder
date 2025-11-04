@@ -6,6 +6,13 @@ import snapshot3 from "../../assets/snapshort3.png"
 import snapshort4 from "../../assets/snapshort4.png"
 
 
+/**
+ * Multi-step onboarding guide component that walks users through Pathfinder features and captures the user's name.
+ *
+ * Renders one of several full-screen pages (0–6) describing features, showing example screenshots, and advancing the guide when the user clicks "next". When the name form is submitted, the entered name is saved to localStorage under the key "name" and the guide advances.
+ *
+ * @returns {JSX.Element} The rendered onboarding guide UI.
+ */
 function GuidePage(){
     const [page, setPage] = useState(0)
 
