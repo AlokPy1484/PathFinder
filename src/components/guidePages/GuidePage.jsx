@@ -56,7 +56,6 @@ if(page === 1){
                     defaultValue="" {...register("name")} type='text' placeholder="Type"/>
                 </form>
             </div>
-                <button type='button' onClick={handleClick} className="absolute bottom-3 right-5 flex flex-row justify-center py-1 px-3 bg-black rounded-md text-center text-white ">next</button>
         </div>
     )
 }
